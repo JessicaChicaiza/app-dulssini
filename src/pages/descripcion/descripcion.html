@@ -1,0 +1,41 @@
+
+<ion-header>
+
+  <ion-navbar color="nuevo">
+    <ion-title>Productos</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding text-center>
+
+
+  <ion-card >
+    <ion-label >{{producto.nombre | uppercase}}</ion-label>
+
+
+    <img src="{{producto.imagen}}"/>
+
+    <ion-card-content>
+      <ion-label >Categoria: {{producto.categoria}}</ion-label>
+      <ion-label >Descripcion: {{producto.descripcion}}</ion-label>
+      <ion-label >Precio: {{producto.precio}}</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Cantidad</ion-label>
+      <ion-input type="number" name="cant"></ion-input>
+    </ion-item>
+    <ion-item>
+    <button ion-button block  color="nuevo">Agregar</button>
+    </ion-item>
+  </ion-card>
+</ion-content>
+

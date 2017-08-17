@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="nuevo">
+    <ion-title>
+      Categorias
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let bar of list_bar">
+      <ion-thumbnail item-start>
+        <img [src]="bar.imagen">
+      </ion-thumbnail>
+      <h2>{{bar.nombre}}</h2>
+      <button ion-button clear (click)="Bar_modal(bar)" item-end>Ver más</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

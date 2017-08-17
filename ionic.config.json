@@ -1,0 +1,8 @@
+{
+  "name": "dulsini",
+  "app_id": "9e7413e0",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
